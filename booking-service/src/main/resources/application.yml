@@ -1,0 +1,14 @@
+server:
+  port: 8002
+
+logging:
+  file:
+    path: /
+    name: bookingLogging.txt
+
+  level:
+    com.wairimuianmoon.bookingservice: info
+
+spring:
+  application:
+    name: booking

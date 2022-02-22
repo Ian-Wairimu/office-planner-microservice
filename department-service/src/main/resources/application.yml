@@ -1,0 +1,24 @@
+server:
+  port: 8001
+
+logging:
+  file:
+    path: /
+    name: departmentLogging.txt
+  level:
+    com.wairimuianmoon.departmentservice: info
+spring:
+  application:
+    name: department
+  datasource:
+    url: jdbc:mysql://localhost:3306/officeplannermicroservice
+    username: wairimu
+    password: $Wairimu#Ian4
+  jpa:
+    show-sql: true
+    generate-ddl: true
+    hibernate:
+      ddl-auto: create
+    properties:
+      hibernate:
+        format_sql: true

@@ -1,0 +1,25 @@
+server:
+  port: 8000
+
+logging:
+  file:
+    path: /
+    name: userLogging.txt
+  level:
+    com.wairimuianmoon.userservice: info
+
+spring:
+  application:
+    name: user
+  datasource:
+    url: jdbc:mysql://localhost:3306/officeplannermicroservice
+    username: wairimu
+    password: $Wairimu#Ian4
+  jpa:
+    hibernate:
+      ddl-auto: create-drop
+    show-sql: true
+    generate-ddl: true
+    properties:
+      hibernate:
+        format_sql: true
